@@ -1,0 +1,693 @@
+/* enlever la scrollbar */
+*::-webkit-scrollbar{
+    width: 0px;
+}
+
+/* curseur personnalisé */
+.cursor{
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
+    z-index: 1;
+    backdrop-filter: grayscale;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.little_cursor{
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid rgb(218,165,32);
+    border-radius: 50%;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
+    z-index: 1;
+    backdrop-filter: grayscale;
+}
+
+/* paramètre de base */
+*{
+    cursor: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+
+*{
+    line-height: 1.5;
+    letter-spacing:1px ;
+}
+
+h1{
+    font-size:5vw;    
+}
+h2{
+    font-size:2vw;
+}
+
+h3 {
+    font-size:1.75vw;
+}
+
+h4 {
+    font-size:1.5vw;
+}
+
+p{
+    font-size:1.25vw;
+}
+a{
+    font-size:1.25vw;
+}li{
+    font-size:1.25vw;
+}
+
+span{
+    font-size:1.25vw;
+}
+
+input{
+    font-size:1.25vw;
+}
+label{
+    font-size:1.25vw ;
+}
+
+input::placeholder{
+    font-size:1.25vw;
+}
+
+button{
+    font-size:1.25vw;
+}
+
+i{
+    font-size:2.25vw;
+}
+
+u{
+    font-size:1.25vw;
+}
+td{
+    font-size:1.25vw;
+}
+
+th{
+    font-size:1.5vw;
+}
+textarea::placeholder {
+    font-size:1.25vw;
+}
+textarea{      
+    font-size:1.25vw;
+}
+select{
+    font-size:1.25vw;
+}
+
+header h2 {
+    font-size: 4vw;
+}
+
+@media (max-width:1440px) {
+
+    h1{
+        font-size:5.5vw;    
+    }
+    h2{
+        font-size:2.25vw;
+    }
+    
+    h3 {
+        font-size:2vw;
+    
+    }
+    
+    h4 {
+        font-size:1.75vw;
+    }
+    
+    p{
+        font-size:1.5vw;
+    }
+    a{
+        font-size:1.5vw;
+    }
+    li{
+        font-size:1.5vw;
+    }
+    
+    span{
+        font-size:1.5vw;
+    }
+    
+    input{
+        font-size:1.5vw;
+    }
+    label{
+        font-size:1.5vw;
+    }
+    
+    input::placeholder{
+        font-size:1.5vw;
+    }
+    
+    button{
+        font-size:1.5vw;
+    }
+
+    i{
+        font-size:2.75vw;
+    }
+
+    u{
+        font-size:1.5vw;
+    }
+    td{
+        font-size:1.5vw;
+    }
+    th{
+        font-size:1.75vw;
+    }
+    textarea::placeholder {
+        font-size:1.5vw;
+    }
+    textarea{
+        font-size:1.5vw;
+    }
+    select{
+        font-size:1.5vw;
+    }
+
+    header h2 {
+        font-size: 4.5vw;
+    }
+      
+}
+
+@media (max-width:1024px) {
+
+    .presentation{
+        flex-direction: column;
+    }
+    h1{
+        font-size:6vw;    
+    }
+    h2{
+        font-size:2.5vw;
+    }
+    
+    h3 {
+        font-size:2.25vw;
+    }
+    
+    h4 {
+        font-size:2vw;
+    }
+    
+    p{
+        font-size:1.75vw;
+    }
+    a{
+        font-size:1.75vw;
+    }
+    li{
+        font-size:1.75vw;
+    }
+    
+    span{
+        font-size:1.75vw;
+    }
+    
+    input{
+        font-size:1.75vw;
+    }
+    label{
+        font-size:1.75vw;
+    }
+    
+    input::placeholder{
+        font-size:1.75vw;
+    }
+    
+    button{
+        font-size:1.75vw;
+    }
+
+    i{
+        font-size:3vw;
+    }
+
+    u{
+        font-size:1.75vw;
+    }
+
+    td{
+        font-size:1.75vw;
+    }
+
+    th{
+        font-size:2vw;
+    }
+    textarea::placeholder {
+        font-size:1.75vw;
+    }
+    textarea{
+        font-size:1.75vw;
+    }
+    select{
+        font-size:1.75vw;
+    }
+      
+    header h2 {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width:800px) {
+
+    h1{
+        font-size:6.5vw;    
+    }
+    h2{
+        font-size:2.75vw;
+    }
+    
+    h3 {
+        font-size:2.5vw;
+    
+    }
+    
+    h4 {
+        font-size:2.25vw;
+    }
+    
+    p{
+        font-size:2vw;
+    }
+    a{
+        font-size:2vw;
+    }li{
+        font-size:2vw;
+    }
+    
+    span{
+        font-size:2vw;
+    }
+    
+    input{
+        font-size:2vw;
+    }
+    label{
+        font-size:2vw;
+    }
+    
+    input::placeholder{
+        font-size:2vw;
+    }
+    
+    button{
+        font-size:1.75vw;
+    }
+
+    i{
+        font-size:3vw;
+    }
+
+    u{
+        font-size:2vw;
+    }
+
+    td{
+        font-size:2vw;
+    }
+
+    th{
+        font-size:2.25vw;
+    }
+
+    textarea::placeholder {
+              font-size:2vw;
+    }
+
+    textarea{
+        font-size:2vw;
+    }
+
+    select{
+        font-size:2vw;
+    }
+
+    header h2 {
+        font-size: 5.5vw;
+    }
+}   
+
+@media (max-width:600px) {
+    h1{
+        font-size:7vw;    
+    }
+    h2{
+        font-size:3.25vw;
+    }
+    
+    h3 {
+        font-size:3vw;
+    }
+    
+    h4 {
+        font-size:2.75vw;
+    }
+    
+    p{
+        font-size:2.5vw;
+    }
+
+    a{
+        font-size:2.5vw;
+    }
+    
+    li{
+        font-size:2.5vw;
+    }
+    
+    span{
+        font-size:2.5vw;
+    }
+    
+    input{
+        font-size:2.5vw;
+    }
+
+    label{
+        font-size:2.5vw;
+    }
+    
+    input::placeholder{
+        font-size:2.5vw;
+    }
+    
+    button{
+        font-size:2.5vw;
+    }
+
+    i{
+        font-size:4vw;
+    }
+
+    u{
+        font-size:2.5vw;
+    }
+
+    td{
+        font-size:2.5vw;
+    }
+    
+    th{
+        font-size:2.75vw;
+    }
+
+    textarea::placeholder {
+        font-size:2.5vw;
+    }
+
+    textarea{
+        font-size:2.5vw;
+    }
+
+    select{
+        font-size:2.5vw;
+    }
+    
+    header h2 {
+        font-size: 6vw;
+    }
+}
+
+nav img{
+    height: 4vw;
+}
+
+#projets{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.info img{
+    width: 15vw;
+}
+
+.info p{
+    padding: 20px;
+}
+
+.info_description{
+    margin: 0px 10vw;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px rgb(0 0 0 / 50%);
+    background: #1F1F1F;
+}
+
+#text_black{
+    color: #0A0A0A;
+    font-weight: bold;
+    padding: 5px;
+}
+
+h2 {
+    font-family: 'persomax', sans-serif;
+    text-align: center;
+    font-weight: initial;
+    color:  #EBEBEB;   
+    text-shadow: 0px 10px 10px rgba(0,0,0,0.5);
+    padding: 30px;
+    padding-top: 100px;
+    margin: 0px;
+}
+
+h1{
+    text-align: center;
+    text-shadow: 0px 10px 10px rgba(0,0,0,0.5);
+    padding: 20px;
+    border-bottom: 2px solid rgb(218,165,32);
+}
+
+h3{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+header h2:before{
+    content: none;
+}
+
+header h2::after{
+    content: none;
+}
+
+.presentation{
+    display: flex;
+    gap: 2.5vw;
+    margin: 0 5vw;
+}
+
+.sous_presentation{
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px rgb(0 0 0 / 50%);
+    width: 100%;
+    flex-direction: column;
+    background: #1F1F1F;
+    PADDING: 10px;
+}
+
+.sous_presentation img{
+    width: 3vw;
+}
+
+.sous_presentation h3{
+    text-align: center;
+    border-bottom: 1px solid rgb(218,165,32);
+}
+
+h2:before,
+nav h4:before{
+    content: "•· ";
+    color: rgb(218,165,32);
+}
+
+h2::after,
+nav h4:after{
+    content: " ·•";
+    color: rgb(218,165,32);
+}
+
+header{
+    background-image: url(blackwood.jpg);
+    background-size: 100%;
+    border-radius: 5px;
+    padding: 95px 30px 0 30px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.5);
+}
+
+Body{
+    font-family: 'League Spartan', sans-serif;
+    color: #EBEBEB;
+    margin:0px;
+    background:#333333
+}
+
+.projet{
+    background-image: url(whitemarbre.png);
+    width: 25vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.5);
+}
+
+.projet img{
+    width: 100%;
+}
+
+.projet:hover{
+    box-shadow: 5px 15px 15px rgba(0,0,0,0.5);
+    transition: 1s;
+}
+
+.image{
+    overflow: hidden;
+}
+
+.full_competence{
+    display: flex;
+    padding: 10px;
+}
+
+.all_competence{
+    display: flex;
+    border-right: 1px rgb(218,165,32) solid;
+    flex-direction: column;
+    padding: 10px;
+    width: 50%;
+}
+.all_competence h4{
+    text-align: center;
+}
+
+.full_competence .all_competence:last-child{
+    display: flex;
+    border-right: none;
+}
+
+.competence{
+    display: flex;
+}
+
+.sous_competence{
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    border: rgb(218,165,32) 1px solid;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+a{
+    font-family: 'League Spartan', sans-serif;
+    text-decoration: none;
+    color: #EBEBEB;
+}
+
+a:hover{
+    color: rgb(218,165,32);
+}
+
+a:focus{
+    color: rgb(255,215,0);
+}
+
+nav{
+    font-family: 'League Spartan', sans-serif;
+    text-align: center;
+    position: fixed ;
+    top: 0;
+    left: 0px;
+    right: 0px;
+    background:#1F1F1F;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.5);
+    padding: 10px 5vw;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav li{
+    width: 100%;
+}
+
+li{
+    list-style-type: none;
+    display: inline;
+}
+.left{
+    text-align: left;
+}
+
+.right{
+    text-align: right;    
+}
+
+.center{
+    text-align: center;
+}
+
+p{
+    font-family: 'League Spartan', sans-serif;
+}
+
+.contact{
+    text-align: center;
+}
+
+.contact img{
+    width: 4vw;
+    padding: 10px;
+}
+
+footer{
+    font-family: 'League Spartan', sans-serif;
+    text-align: center;
+    background-image: url(feuillegold.jpg);
+    border-radius: 40px 40px 0px 0px;
+    padding: 10px;
+    box-shadow: 0px -10px 10px rgba(0,0,0,0.5);
+}
+
+@font-face{
+    font-family: "persomax";
+    src: url("../src/painter.ttf") format("truetype");
+}
